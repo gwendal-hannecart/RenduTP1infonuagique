@@ -1,0 +1,30 @@
+CREATE TABLE infoPeopleImc (
+    id              SERIAL NOT NULL PRIMARY key,
+    name            varchar(80) NOT NULL ,
+    size            float NOT NULL, 
+    weight          float NOT NULL,
+    IMC             float NOT NULL,
+    date            date NOT NULL DEFAULT CURRENT_DATE
+);
+
+CREATE TABLE infoconnectionperson (
+    id              SERIAL NOT NULL,
+    firstname       varchar(80) NOT NULL,
+    lastname        varchar(80) NOT NULL,
+    email           varchar(80) NOT NULL PRIMARY KEY,
+    username         varchar(80) NOT NULL PRIMARY KEY,
+    password        TEXT NOT NULL
+);
+
+
+CREATE TABLE imcPeopleCompte (		
+    name            varchar(80) NOT NULL  ,
+    size            float NOT NULL, 
+    weight          float NOT NULL,
+    IMC             float NOT NULL,
+    date            date NOT NULL DEFAULT CURRENT_DATE
+);
+
+
+
+
